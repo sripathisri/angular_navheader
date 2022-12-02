@@ -70,13 +70,12 @@ export class ReactiveformComponent implements OnInit {
 
   registerSubmit() {
     if (this.Password.value == this.Repearpassword.value) {
-      console.log('submited');
+      if (this.registerForm.status == 'VALID') {
+        console.log(this.registerForm.value);
+      }
       this.repeatpass = 'none';
     } else {
       this.repeatpass = 'inline';
     }
-    console.log(this.registerForm.valid);
-
-    console.log(this.registerForm.value);
   }
 }
