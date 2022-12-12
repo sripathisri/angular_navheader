@@ -58,6 +58,28 @@ a:hover {
   display: none;
 }
 
+.vidoes {
+  position: relative;
+}
+
+.dropdown {
+  background-color: rgb(176, 96, 96);
+  padding: 1em 0;
+  width: auto;
+  position: absolute;
+  border-radius: 5px;
+  top: 35px;
+  display: none;
+}
+
+.dropdown li:hover {
+  background-color: #ff6f009e;
+}
+
+.vidoes:hover .dropdown {
+  display: block;
+}
+
 @media (max-width: 991px) {
   label.logo {
     font-size: 2em;
@@ -80,7 +102,7 @@ a:hover {
     background-color: #2b2e20;
     top: 80px;
     left: -100%;
-    text-align: center;
+    text-align: left;
     transition: all 0.5s;
   }
 
