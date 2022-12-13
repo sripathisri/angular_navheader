@@ -13,7 +13,8 @@ const routes: Routes = [
   { path: 'header2', component: Header2Component },
   { path: 'header3', component: Header3Component },
   { path: 'header4', component: Header4Component },
-  { path: 'Contactus', component: ContactusComponent },
+  { path: 'Contact', component: ContactusComponent}
+
 ];
 
 @NgModule({
