@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ContactusComponent } from './contactus/contactus.component';
 import { Header1Component } from './header1/header1.component';
 import { Header2Component } from './header2/header2.component';
 import { Header3Component } from './header3/header3.component';
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'header2', component: Header2Component },
   { path: 'header3', component: Header3Component },
   { path: 'header4', component: Header4Component },
+  { path: 'Contactus', component: ContactusComponent },
 ];
 
 @NgModule({
