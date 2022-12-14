@@ -22,7 +22,7 @@ body {
 
 header {
   background: var(--header-bg);
-  padding-left: 1.5em;
+  padding: 1em;
   position: sticky;
   top: 0;
 }
@@ -47,7 +47,7 @@ header {
   display: block;
   text-decoration: none;
   color: rgb(0, 0, 0);
-  padding: 1em 1.5em;
+  padding: 1em 1.2em;
   font-size: 1.3rem;
 }
 
@@ -60,7 +60,7 @@ header {
   left: 0;
   background-color: rgb(255, 255, 255);
   white-space: nowrap;
-  padding: 1.5em 0;
+  padding: 1.5em 0px;
   min-width: 16em;
 
   /* hide submenus */
@@ -85,6 +85,11 @@ header {
   background-color: hsl(0, 0%, 100%);
   color: rgb(37, 13, 215);
 }
+
+.submenu {
+  background-color: rgb(255, 255, 255);
+}
+
 .menu > li:hover > a {
   background-color: hsla(0, 0%, 100%, 0.95);
   color: rgb(48, 12, 207);
@@ -104,11 +109,6 @@ header {
   transition: transform 100ms ease-in-out;
 }
 
-.get {
-  border: 1px solid black;
-  padding: 0;
-}
-
 /* Reveal  */
 .menu > li:hover > a + .submenu,
 .submenu > li:hover > a + .submenu {
@@ -121,6 +121,8 @@ header {
 .submenu > li:hover > a > .arrow {
   transform: rotate(225deg);
 }
+
+/* getbutton */
 
 @media only screen and (max-width: 78.75em) {
   .submenu .submenu .submenu {
@@ -149,7 +151,7 @@ header {
   }
 }
 
-@media only screen and (max-width: 65em) {
+@media only screen and (max-width: 61.9em) {
   header {
     /*     position: relative; */
     padding: 1.5em 2em;
@@ -179,7 +181,6 @@ header {
   }
   .menu > li > a {
     font-size: 1rem;
-    color: var(--dark);
   }
   .submenu > li > a {
     font-size: 1rem;
@@ -187,7 +188,11 @@ header {
 
   .submenu {
     top: 0;
+    border: none;
+    border-radius: 0;
+    background-color: lightblue;
   }
+
   .submenu .submenu {
     left: 0;
     top: 0;
