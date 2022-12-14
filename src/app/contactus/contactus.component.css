@@ -169,11 +169,11 @@ section::before {
   border-bottom: 1px solid #777;
 }
 
-.container1 .contactForm .formBox .inputbox textarea{
+.container1 .contactForm .formBox .inputbox textarea {
   height: 120px;
 }
 
-.container1 .contactForm .formBox .inputbox span{
+.container1 .contactForm .formBox .inputbox span {
   position: absolute;
   left: 0;
   padding: 5px 0px;
@@ -183,45 +183,46 @@ section::before {
   transition: 0.3s;
 }
 
-.container1 .contactForm .formBox .inputbox input:focus~span,
-.container1 .contactForm .formBox .inputbox input:valid~span,
-.container1 .contactForm .formBox .inputbox textarea:focus~span,
-.container1 .contactForm .formBox .inputbox textarea:valid~span{
-  transform:translateY(-20px);
+.container1 .contactForm .formBox .inputbox input:focus ~ span,
+.container1 .contactForm .formBox .inputbox input:valid ~ span,
+.container1 .contactForm .formBox .inputbox textarea:focus ~ span,
+.container1 .contactForm .formBox .inputbox textarea:valid ~ span {
+  transform: translateY(-20px);
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 1px;
-  color:#3e5fbc;
+  color: #3e5fbc;
 }
 
-.container1 .contactForm .formBox .inputbox input[type="submit"]{
-   position: relative;
-   cursor: pointer;
-   background-color: #3e5fbc;
-   color: #ffff;
-   border: none;
-   max-width: 150px;
-   padding: 12px;
+.container1 .contactForm .formBox .inputbox input[type="submit"] {
+  position: relative;
+  cursor: pointer;
+  background-color: #3e5fbc;
+  color: #ffff;
+  border: none;
+  max-width: 150px;
+  padding: 12px;
 }
 
-.container1 .contactForm .formBox .inputbox input[type="submit"]:hover{
+.container1 .contactForm .formBox .inputbox input[type="submit"]:hover {
   background-color: #1515e6;
-
 }
-
 
 /* resige */
 
-@media(max-width :1200px ){
-  .container1{
-    width: 90%;
-    min-height: auto;
-    margin: 2px;
+@media (max-width: 1200px) {
+  .container1 {
+    width: 100%;
+    max-width: auto;
+    margin: auto;
   }
-  .contactInfo{
-     top:0;
-     height: 500px;;
-     position: relative;
-     box-shadow: none;
+  .contactInfo {
+    top: 0;
+    height: 500px;
+    position: relative;
+    box-shadow: none;
+  }
+
+  .container1 .contactForm {
   }
 }

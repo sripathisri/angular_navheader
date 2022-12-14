@@ -9,14 +9,14 @@ import { JsnavbarComponent } from './jsnavbar/jsnavbar.component';
 import { ReactiveformComponent } from './reactiveform/reactiveform.component';
 
 const routes: Routes = [
-  { path: '', component: Header1Component },
+  { path: '', component: ContactusComponent },
+  { path: 'a', component: Header1Component },
   { path: 'reactiveform1', component: ReactiveformComponent },
   { path: 'header2', component: Header2Component },
   { path: 'header3', component: Header3Component },
   { path: 'header4', component: Header4Component },
-  { path: 'Contact', component: ContactusComponent},
-  { path: 'jsnav', component: JsnavbarComponent},
-
+  { path: 'Contactus', component: ContactusComponent },
+  { path: 'jsnav', component: JsnavbarComponent },
 ];
 
 @NgModule({

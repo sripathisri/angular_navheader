@@ -12,7 +12,12 @@
         <div class="branding">
           <h2><a href="#" class="branding-logo">Smashtheshell</a></h2>
         </div>
-        <label for="input-hamburger" class="hamburger"></label>
+        <label
+          for="input-hamburger"
+          class="hamburger"
+          id="hamburger"
+          (click)="close()"
+        ></label>
         <input type="checkbox" id="input-hamburger" hidden />
         <ul class="menu">
           <li><a href="#" class="menu-link">Home</a></li>
@@ -31,6 +36,9 @@
           </li>
           <li><a href="#" class="menu-link">Articles</a></li>
           <li><a href="#" class="menu-link">Contact</a></li>
+          <li>
+            <a href="#" class="menu-link">Get In touch</a>
+          </li>
         </ul>
       </nav>
     </header>
